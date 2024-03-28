@@ -15,6 +15,10 @@ struct ContentView: View {
     // 1 ordre :
     //@Query(sort: \Book.title) var books: [Book]
     
+    //1 ordre inversé :
+    //@Query(sort: \Book.rating, order: .reverse) var books: [Book]
+
+    
     // Plusieurs ordres
     @Query(sort: [
         SortDescriptor(\Book.title),
